@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trivago.Vistas.Metodo_Pago">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#FFC0C5">
+                <Frame VerticalOptions="Start" Margin="10, 10, 0,10" CornerRadius="10" BackgroundColor="#f5737c">
+
+                    <StackLayout Orientation="Horizontal" Margin="-10" HorizontalOptions="Center">
+                        <Label Text="REALIZA TU PAGO" FontSize="20" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame VerticalOptions="Start" Margin="10, 10, 0,10" CornerRadius="10">
+
+                    <StackLayout Orientation="Horizontal" Margin="-10">
+                        <Label Text="Tipo de Tarjeta:" FontSize="20" TextColor="#535353"/>
+
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout Orientation="Horizontal">
+                                <RadioButton x:Name="credito" GroupName="groupOptions" />
+                                <Label Text="Credito" FontSize="20" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <RadioButton x:Name="debito" GroupName="groupOptions" />
+                                <Label Text="Debitio" FontSize="20" />
+                            </StackLayout>
+
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame VerticalOptions="Start" Margin="10 ,10 ,0 ,10" CornerRadius="10">
+                    <StackLayout Orientation="Vertical" Margin="-10">
+                        <Label Text="Número de Tarjeta:" FontSize="20" TextColor="#535353" />
+                        <Entry x:Name="tarjeta" Placeholder="Número de tarjeta" Keyboard="Numeric" MaxLength="16"  />
+                    </StackLayout>
+                </Frame>
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame VerticalOptions="Start" Margin="10, 10, 0 ,10" CornerRadius="10">
+
+                        <StackLayout Orientation="Vertical" Margin="-10" >
+                            <Label Text="Fecha vencimiento:" FontSize="20" TextColor="#535353" />
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Entry x:Name="mes" Placeholder="mes" WidthRequest="50" Keyboard="Numeric" MaxLength="2" />
+                                <Label Text="/" FontSize="30" TextColor="#535353"/>
+                                <Entry x:Name="año" Keyboard="Numeric" Placeholder="año" WidthRequest="50" MaxLength="2" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                    <Frame VerticalOptions="Start" Margin="10, 10, 0 ,10" CornerRadius="10">
+
+                        <StackLayout Orientation="Vertical" Margin="-10">
+                            <Label Text="Codigo de Seguridad:" FontSize="20" TextColor="#535353" />
+                            <Entry x:Name="code" Keyboard="Numeric" MaxLength="3" />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame VerticalOptions="Start" Margin="10, 10, 0 ,10" CornerRadius="10">
+
+                        <StackLayout Orientation="Vertical" Margin="-10">
+                            <Label Text="Pais donde vive     :" FontSize="20" TextColor="#535353" />
+                            <Entry  x:Name="pais"   Placeholder="Pais"   />
+
+                        </StackLayout>
+                    </Frame>
+                    <Frame VerticalOptions="Start" Margin="10, 10, 0 ,10" CornerRadius="10">
+
+                        <StackLayout Orientation="Vertical" Margin="-10">
+                            <Label Text="Ciudad donde vive     :" FontSize="20" TextColor="#535353" />
+                            <Entry  x:Name="ciudad"   Placeholder="Ciudad"   />
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <Frame VerticalOptions="Start" Margin="10 ,10 ,0 ,10" CornerRadius="10">
+                    <StackLayout Orientation="Vertical" Margin="-10">
+                        <Label Text="Direccion:" FontSize="20" TextColor="#535353" />
+
+
+
+                        <Entry x:Name="direccion" Placeholder="Distrito,Avenida" />
+
+                    </StackLayout>
+                </Frame>
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox x:Name="checkBox"  />
+                    <Label Text="Estoy de acuerdo con la compra realizada  " FontSize="20" VerticalOptions="Center"  TextColor="#f5737c"/>
+                </StackLayout>
+
+                <StackLayout >
+                    <Button Text="Finalizar compra" BackgroundColor="#f5737c"
+            x:Name="btn_next"        
+            Clicked="btn_next_Clicked" 
+            CornerRadius="25"
+             Margin="10"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

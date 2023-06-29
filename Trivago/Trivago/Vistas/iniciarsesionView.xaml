@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="trivago.View.iniciarsesionView">
+    <ContentPage.Content>
+        <Frame BackgroundColor="#FFC0C5" Margin="20" Padding="10" CornerRadius="10">
+            <StackLayout>
+                <Frame BackgroundColor="#f5737c" Margin="0,0,0,10" Padding="5" CornerRadius="15">
+                    <Label x:Name="x_principal"
+                           Text="Iniciar Sesion"
+                           FontSize="Large"
+                           Margin="8"
+                           TextColor="white"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                </Frame>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                    <Frame BackgroundColor="#f5737c" Margin="0,0,10,0" Padding="5" CornerRadius="15">
+                        <Label Text="Ingrese su correo :" FontSize="Medium" TextColor="white" VerticalOptions="Center" />
+                    </Frame>
+                    <Entry x:Name="x1_correo" Placeholder="" FontSize="Medium" TextColor="Black" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                    <Frame BackgroundColor="#f5737c" Margin="0,0,10,0" Padding="5" CornerRadius="15">
+                        <Label Text="Ingrese su contraseña :" FontSize="Medium" TextColor="white" VerticalOptions="Center" />
+                    </Frame>
+                    <Entry x:Name="x1_contraseña" Placeholder="" FontSize="Medium" TextColor="Black" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
+                <Button x:Name="btns_guardar" Text="cargar" Clicked="btns_guardar_Clicked" TextColor="white" BackgroundColor="#f5737c" CornerRadius="10"/>
+                <Button x:Name="iniregresar" Text="Regresar" Clicked="iniregresar_Clicked" TextColor="white" BackgroundColor="#f5737c" CornerRadius="10"/>
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

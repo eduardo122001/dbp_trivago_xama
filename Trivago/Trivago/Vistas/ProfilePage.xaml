@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:HotellWhiteIsaac.ViewModels"
+             mc:Ignorable="d"
+             x:Class="HotellWhiteIsaac.Views.ProfilePage"
+             Title="My profile"
+             NavigationPage.HasNavigationBar="false"
+             >
+    
+        <ContentPage.Resources>
+        <ResourceDictionary>
+         
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <!--Cabecera-->
+    <StackLayout Padding="0" Margin="0">
+        <Grid>
+            <Frame BackgroundColor="#f5737c" HeightRequest="110" HorizontalOptions="FillAndExpand" Padding="0"/>
+            <Label Text="Trivago falso" FontSize="35" FontAttributes="Bold" 
+                           TextColor="White"  HorizontalTextAlignment="Center" Margin="0,20"/>
+            <Label Text="Los mejores hoteles de Arequipa" FontSize="30" FontAttributes="Italic" 
+                           TextColor="White"  HorizontalTextAlignment="Center" Margin="0,55,0,0"/>
+        </Grid>
+    </StackLayout>
+        
+
+        <!--Informacion del usuario-->
+        <StackLayout Margin="10,130,10,0" Padding="10">
+
+            <!--Boton-->
+        <StackLayout Margin="10">
+            <Button x:Name="ShowAvailableRoomsButton" 
+                    Text="Nueva reservacion" 
+                    Clicked="ShowAvailableRoomsButton_Clicked"
+                    BackgroundColor="#f5737c"
+                    TextColor="White"
+                    CornerRadius="20"/>
+                <Button x:Name="UpdateInfoButton"
+                        Text="Mis reservaciones"
+                        BackgroundColor="#f5737c"
+                        TextColor="White"
+                        CornerRadius="20"/>
+                
+            </StackLayout>
+            <Label Text="Trivago falso es una plataforma líder de búsqueda de hoteles de Arequipa en línea que permite a los usuarios comparar precios y encontrar las mejores ofertas de hoteles." HorizontalTextAlignment="Center" FontAttributes="Bold" />
+            <ScrollView Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout>
+                        <Image Source="h1.webp" />
+                        <Label Text="Sonesta Hotel Arequipa" />
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="h2.webp" />
+                        <Label Text="Casa Andina Premium Arequipa" />
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="h3.png" />
+                        <Label Text="Tierra viva Arequipa" />
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="h4.png" />
+                        <Label Text="Casa Andina Select Arequipa" />
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="h5.webpg" />
+                        <Label Text="Selina Arequipa" />
+                    </StackLayout>
+               
+                    
+            </StackLayout>
+            </ScrollView>
+    </StackLayout>
+
+    </Grid>
+    
+</ContentPage>
+
+    

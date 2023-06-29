@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trivago.Vista.GuardarHotel">
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <ScrollView Grid.Row="0" Grid.Column="0">
+                <StackLayout BackgroundColor="#FFC0C5" >
+                    <Label Text="Sonesta Hotel Arequipa" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="Sonesta Hotel Arequipa se encuentra a solo unas cuadras de la plaza de Yanahuara y la Catedral de Arequipa. También posee dos bares, un restaurante, sala de fitness, terraza y servicios de spa. Puedes encontrar ofertas desde S/ 285." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                    <Label Text="* Dirección: Urbanización Teresa de Jesús I-1, Cerro Colorado, Arequipa" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="* Teléfono: (054) 308777" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+
+                    <Image Source="https://imgmedia.larepublica.pe/640x374/larepublica/original/2022/03/19/62364ea3be813b5a8a5503d3.webp" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+
+                    <Button Text="Agendar ahora" HorizontalOptions="Center" TextColor="White" CornerRadius="25" BackgroundColor="#f5737c" VerticalOptions="EndAndExpand" Clicked="OnNextButtonClicked" />
+                    <!--Clicked="OnNextButtonClicked"-->
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView Grid.Row="0" Grid.Column="1">
+                <StackLayout BackgroundColor="#FFC0C5">
+                    <Label Text="Casa Andina Premium Arequipa" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="Se trata de un hotel de cuatro estrellas ubicado a 13 minutos en auto del aeropuerto Internacional Rodríguez Ballón de Arequipa. Tiene un restaurante y un bar, su recepción está disponible las 24 horas. Si decides elegir esta opción, podrás llegar al Museo Santuario Andinos o al Centro Turístico Mundo Alpaca en tan solo siete minutos. Sus precios van desde S/ 493 a S/ 699 por dos días." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                    <Label Text="* Dirección: Dirección: Calle Ugarte, 403, Arequipa, Perú" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="* Teléfono: (054) 226907" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+
+                    <Image Source="https://imgmedia.larepublica.pe/640x374/larepublica/original/2022/03/19/62364ea5691b966bff20a2a5.webp" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+
+                    <Button Text="Agendar ahora" HorizontalOptions="Center" TextColor="White" CornerRadius="25" BackgroundColor="#f5737c" VerticalOptions="EndAndExpand" Clicked="OnNextButtonClicked" />
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView Grid.Row="0" Grid.Column="2">
+                <StackLayout BackgroundColor="#FFC0C5">
+                    <Label Text="Tierra Viva Arequipa Plaza" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="En este hotel de tres estrellas se puede disfrutan de un desayuno buffet gratuito todos los días.Cuenta con acceso a internet en las habitaciones y en la zonas comunes. También tiene la opción de traslado desde el aeropuerto hasta sus instalaciones. Puedes separar una habitación desde S/ 245. Se ubica en el centro de la ciudad y a solo 22 minutos a pie del Palacio Metropolitano de Bellas Artes Mario Vargas Llosa." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                    <Label Text="* Dirección: calle Jerusalén 202, Arequipa, 4001" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="* Teléfono: (054) 234161" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+
+                    <Image Source="https://imgmedia.larepublica.pe/640x374/larepublica/original/2022/03/19/62364eaafbc504056b2ecd36.webp" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+
+                    <Button Text="Agendar ahora" HorizontalOptions="Center" TextColor="White" CornerRadius="25" BackgroundColor="#f5737c" VerticalOptions="EndAndExpand" Clicked="OnNextButtonClicked" />
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView Grid.Row="1" Grid.Column="0">
+                <StackLayout BackgroundColor="#FFC0C5">
+                    <Label Text="Casa Andina Select Arequipa Plaza" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="Casa Andina Select Arequipa Plaza es uno de los hoteles más bellos de la región. Se ubica a solo dos minutos del conjunto arquitectónico de la Compañía de Jesús y los claustros de La Compañía.  Las personas que deseen alojarse pueden encontrar ofertas desde S/ 315." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                    <Label Text="* Dirección: Portal de Flores 116, Arequipa, Perú" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="* Teléfono: (054) 226907" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+
+                    <Image Source="https://imgmedia.larepublica.pe/640x374/larepublica/original/2022/03/19/62364ea8f504ab17f669e594.webp" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+
+                    <Button Text="Agendar ahora" HorizontalOptions="Center" TextColor="White" CornerRadius="25" BackgroundColor="#f5737c" VerticalOptions="EndAndExpand" Clicked="OnNextButtonClicked" />
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView Grid.Row="1" Grid.Column="1">
+                <StackLayout BackgroundColor="#FFC0C5">
+                    <Label Text="Casa Andina Standard Arequipa" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="Hotel de 3.5 estrellas que cuenta con bar y desayuno completo gratuito todos los días. Se encuentra cerca del monasterio de Santa Catalina y de la plaza de Armas de Arequipa.     Posee una terraza y la recepción está disponible las 24 horas del día. Además, tiene ofertas desde los S/ 255." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                    <Label Text="* Dirección: calle Jerusalén 603, Arequipa 4001" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="* Teléfono: (054) 202070" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+
+                    <Image Source="https://imgmedia.larepublica.pe/640x374/larepublica/original/2022/03/19/62364eafbe813b5a8a5503d4.webp" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+
+                    <Button Text="Agendar ahora" HorizontalOptions="Center" TextColor="White" CornerRadius="25" BackgroundColor="#f5737c" VerticalOptions="EndAndExpand" Clicked="OnNextButtonClicked" />
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView Grid.Row="1" Grid.Column="2">
+                <StackLayout BackgroundColor="#FFC0C5">
+                    <Label Text="Selina Arequipa" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="Selina Arequipa es un alojamiento con piscina al aire libre. Los visitantes pueden alojarse en este recinto desde tan solo S/ 153. Los lugares turísticos que se ubican a sus alrededores son el conjunto arquitectónico de la Compañía de Jesús, los claustros de La Compañía, el Monasterio de Santa Catalina, el mercado de San Camilo y muchos otros más." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                    <Label Text="* Dirección: calle Jerusalén 606, Arequipa, 4001" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="* Teléfono: (01) 4800494" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+
+                    <Image Source="https://imgmedia.larepublica.pe/640x374/larepublica/original/2022/03/19/62364eace2a8f37ae0250557.webp" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+
+                    <Button Text="Agendar ahora" HorizontalOptions="Center" TextColor="White" CornerRadius="25" BackgroundColor="#f5737c" VerticalOptions="EndAndExpand" Clicked="OnNextButtonClicked" />
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView Grid.Row="2" Grid.Column="0">
+                <StackLayout Grid.Row="2" Grid.Column="0" BackgroundColor="#FFC0C5">
+                    <Label Text="Hotel Santa Rosa"  FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="Este local ofrece habitaciones para el servicio de spa, servicio de conferencias y recepción disponible las 24 horas. También se puede acceder a un desayuno continental gratuito. Asimismo, brindan asistencia turística para que conozcas aún mejor la Ciudad Blanca. Es una de las opciones más módicas y accesibles, pues el costo de alojamiento es de S/ 170." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                    <Label Text="* Dirección: Santa Catalina 206, Arequipa 4001" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="* Teléfono: (054) 212981" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+
+                    <Image Source="https://imgmedia.larepublica.pe/640x374/larepublica/original/2022/03/19/62364eb3f504ab17f669e595.webp" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+
+                    <Button Text="Agendar ahora" HorizontalOptions="Center" TextColor="White" CornerRadius="25" BackgroundColor="#f5737c" VerticalOptions="EndAndExpand" Clicked="OnNextButtonClicked" />
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView Grid.Row="2" Grid.Column="1">
+                <StackLayout Grid.Row="2" Grid.Column="1" BackgroundColor="#FFC0C5">
+                    <Label Text="Hotel San Agustín Posada del Monasterio" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="Ubicado a cuatro minutos del centro histórico, este hotel de 3.5 estrellas es otro de los más famosos de Arequipa. Brinda servicios de traslado desde el aeropuerto, los cuales podrían incluir cargos adicionales, y posee un restaurante y un bar para que puedas disfrutar un momento de tranquilidad con tu pareja, amigos o familiares. La opción más accesible asciende a S/ 228." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                    <Label Text="* Dirección: Santa Catalina 300, Arequipa 4001" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="* Teléfono: (01) 2032840" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+
+                    <Image Source="https://imgmedia.larepublica.pe/640x374/larepublica/original/2022/03/19/62364eb1691b966bff20a2a6.webp" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+
+                    <Button Text="Agendar ahora" HorizontalOptions="Center" TextColor="White" CornerRadius="25" BackgroundColor="#f5737c" VerticalOptions="EndAndExpand" Clicked="OnNextButtonClicked" />
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView Grid.Row="2" Grid.Column="2">
+                <StackLayout BackgroundColor="#FFC0C5">
+                    <Label Text="Katari Hotel At Plaza de Armas" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="Con un precio de alojamiento de S/ 262, el Katari Hotel At Plaza de Armas de 3.5 estrellas se ubica en el Centro Histórico de Arequipa. Esto permite que las personas puedan visitar sin mayores problemas varios destinos turísticos de la región, como el museo Santuarios Andinos, el monasterio de Santa Catalina, el Palacio Metropolitano de Bellas Artes Mario Vargas Llosa, entre otros." TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                    <Label Text="* Dirección: Portal de la Municipalidad 128, Arequipa 4001" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+                    <Label Text="* Teléfono: (054) 213141" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" />
+
+                    <Image Source="https://imgmedia.larepublica.pe/640x374/larepublica/original/2022/03/19/62364eb5fbc504056b2ecd37.webp" HorizontalOptions="Center" VerticalOptions="EndAndExpand" />
+
+                    <Button Text="Agendar ahora" HorizontalOptions="Center" TextColor="White" CornerRadius="25" BackgroundColor="#f5737c" VerticalOptions="EndAndExpand" Clicked="OnNextButtonClicked" />
+                </StackLayout>
+            </ScrollView>
+
+            <ScrollView Grid.RowSpan="1" Grid.Row="3" Grid.ColumnSpan="3" Grid.Column="0">
+                <StackLayout BackgroundColor="#FFC0C5">
+                    <Entry Placeholder="Nombre" TextColor="Black" x:Name="nombre" />
+                    <Entry Placeholder="Contacto" TextColor="Black" x:Name="contacto" />
+                    <Entry Placeholder="Direccion" TextColor="Black" x:Name="direccion" />
+
+                    <Button Text="Guardar" x:Name="btnGuardar" TextColor="White" BackgroundColor="#f5737c" CornerRadius="25"
+                    Clicked="btnGuardar_Clicked"/>
+                </StackLayout>
+            </ScrollView>
+
+            <!--FontSize="Large"  Grid.RowSpan="2" Grid.ColumnSpan="2" TextDecorations="Underline"-->
+        </Grid>
+    </ScrollView>
+</ContentPage>

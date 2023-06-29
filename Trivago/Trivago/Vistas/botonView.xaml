@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="trivago.View.botonView"
+             BackgroundColor="#FFC0C5">
+    <ContentPage.Content>
+
+        <StackLayout  VerticalOptions="Center" HorizontalOptions="Center" >
+            <Label Text="TRIVAGO" FontSize="100" TextColor="White"  HorizontalOptions="Center" Margin="0,0,0,20" />
+            <Button x:Name="iniciarsesión" Text="Iniciar Sesion" BackgroundColor="#f5737c" TextColor="white" Clicked="iniciarSesion_Clicked" Margin="0,0,0,10" CornerRadius="25"/>
+            <Button x:Name="registrar" Text="Registrar" BackgroundColor="#f5737c" TextColor="white" Clicked="registrar_Clicked" CornerRadius="25" />
+                
+            </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Trivago.Vistas.Reservacion_form">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout BackgroundColor="#FFC0C5">
+                <Frame VerticalOptions="Start" Margin="10 ,10 ,0 ,10" CornerRadius="10" BackgroundColor="#f5737c">
+                    <StackLayout Orientation="Vertical" Margin="-10">
+                        <Label Text="RESERVACION" FontSize="30" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+
+                    </StackLayout>
+                </Frame>
+                <Frame VerticalOptions="Start" Margin="10 ,10 ,0 ,10" CornerRadius="10">
+                    <StackLayout Orientation="Vertical" Margin="-10">
+                        <Label Text="Nombres y Apellidos:" FontSize="20" TextColor="#535353" />
+                        <BoxView Color="#535353" HeightRequest="1"  VerticalOptions="Center"  />
+
+                        <Entry x:Name="nombres" Placeholder="Nombres" />
+                        <Entry x:Name="apellidos" Placeholder="Apellidos" />
+
+                    </StackLayout>
+                </Frame>
+                <Frame VerticalOptions="Start" Margin="10, 10, 0, 10" CornerRadius="10">
+
+                    <StackLayout Orientation="Horizontal" Margin="-10">
+                        <Label Text="Hotel:" FontSize="20" TextColor="#535353"/>
+                        <Picker x:Name="hoteles" Title="elige uno"  SelectedIndexChanged="select_nac_SelectedIndexChanged" >
+                            <Picker.Items>
+                                <x:String>Los Reales</x:String>
+                                <x:String>Las Palmeras</x:String>
+                                <x:String>Los Eslabonez</x:String>
+                            </Picker.Items>
+                        </Picker>
+
+                    </StackLayout>
+                </Frame>
+                <Frame VerticalOptions="Start" Margin="10, 10 ,0, 10" CornerRadius="10">
+                    <StackLayout Orientation="Horizontal" Margin="-10">
+                        <Label Text="Fecha de entrada:" FontSize="20" TextColor="#535353" />
+                        <DatePicker x:Name="dateentrada" FontSize="15" />
+                        <Label Text="Fecha de salida:" FontSize="20" TextColor="#535353" />
+                        <DatePicker x:Name="datesalida" FontSize="15"/>
+
+                    </StackLayout>
+                </Frame>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Frame VerticalOptions="Start" Margin="10, 10, 40 ,10" CornerRadius="10">
+
+                        <StackLayout Orientation="Vertical" Margin="-10" >
+                            <Label Text="Adultos:" FontSize="20" TextColor="#535353" />
+                            <Entry x:Name="adultos" Keyboard="Numeric" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame VerticalOptions="Start" Margin="10, 10, 50 ,10" CornerRadius="10">
+
+                        <StackLayout Orientation="Vertical" Margin="-10" >
+                            <Label Text="Niños:" FontSize="20" TextColor="#535353" />
+                            <Entry x:Name="niños" Keyboard="Numeric" />
+                        </StackLayout>
+
+                    </Frame>
+                    <Frame VerticalOptions="Start" Margin="10, 10, 0 ,10" CornerRadius="10">
+                        <StackLayout Orientation="Vertical" Margin="-10">
+                            <Label Text="Habitaciones:" FontSize="20" TextColor="#535353" />
+                            <Entry x:Name="habitaciones" Keyboard="Numeric" />
+                        </StackLayout>
+
+                    </Frame>
+                </StackLayout>
+                <Frame VerticalOptions="Start" Margin="10, 10, 0,10" CornerRadius="10">
+
+                    <StackLayout Orientation="Vertical" Margin="-10">
+                        <Label Text="Clase:" FontSize="20" TextColor="#535353"/>
+
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
+                                <RadioButton x:Name="Economica" GroupName="groupOptions" />
+                                <Label Text="Economica" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <RadioButton x:Name="Empresarial" GroupName="groupOptions" />
+                                <Label Text="Empresarial" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <RadioButton x:Name="suite" GroupName="groupOptions" />
+                                <Label Text="Suite" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <RadioButton x:Name="presidencial" GroupName="groupOptions" />
+                                <Label Text="Presidentcia" />
+                            </StackLayout>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+
+                <StackLayout >
+                    <Button Text="Siguiente" BackgroundColor="#f5737c" TextColor="White"
+            x:Name="btn_next"        
+            Clicked="btn_next_Clicked" 
+            CornerRadius="25"
+             Margin="10"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
